@@ -19,7 +19,7 @@ public class TwoSum {
         return false;
     }
     public static void main(String [] args) {
-        int arr[] = {1, 2, 3, 4, 5, 6};
+        int arr[] = {3,2,4};
         System.out.print(find(arr,9));
     }
 }
