@@ -12,7 +12,7 @@ public class MaximumSumWithOneDelete {
             oneDelete = Math.max(prevDelete,oneDelete+arr[i]);
             System.out.println(oneDelete);
             res = Math.max(res,Math.max(noDelete,oneDelete));
-         
+
         }
         return res;
     }
