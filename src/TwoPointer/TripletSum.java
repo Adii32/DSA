@@ -3,6 +3,12 @@ package TwoPointer;
 import java.util.Arrays;
 
 public class TripletSum {
+//    view Question
+//
+//    Given a sorted array of integers and a target value, find any
+//    three numbers whose sum is equal to the target. Return
+//    the triplet. If no such triplet exists, return
+//    an empty array (or a default value).
     public static int[] find(int arr[],int target){
         int value[] = new int[3];
         for(int i=0;i<arr.length-2;i++){

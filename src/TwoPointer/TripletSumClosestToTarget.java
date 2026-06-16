@@ -1,6 +1,9 @@
 package TwoPointer;
 
 public class TripletSumClosestToTarget {
+//    Given an integer array nums and an integer target, find three integers in the array
+//    such that their sum is closest to the target. Return the sum of
+//    the three integers. You may assume that each input has exactly one solution.
     public static int find(int arr[],int target){
         int minDiff = Integer.MAX_VALUE;
         int value =0;
@@ -30,8 +33,8 @@ public class TripletSumClosestToTarget {
         return value;
     }
     public static void main(String [] args){
-        int arr[] = {1,2,3,4,5,6,7};
-        int found = find(arr,20);
+        int arr[] = {0,1,2,2};
+        int found = find(arr,6);
         System.out.println(found);
     }
 }
