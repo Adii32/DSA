@@ -3,6 +3,9 @@ package TwoPointer;
 import java.util.Arrays;
 
 public class SortZeroOneTwo {
+//    Given an array containing only 0s, 1s, and 2s, sort
+//    the array in ascending order without using any built-in sorting algorithm.
+//    The solution must run in O(n) time and use O(1) extra space.
     public static void sort(int arr[]){
         int start=0;
         int mid=start+1;
