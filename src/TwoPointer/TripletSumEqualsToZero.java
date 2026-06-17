@@ -3,6 +3,9 @@ package TwoPointer;
 import java.util.Arrays;
 
 public class TripletSumEqualsToZero {
+//     Given an integer array arr, find one triplet whose sum is equal to 0.
+
+// Return the three numbers if such a triplet exists. If no triplet exists, return an empty array.
     public static int[] find(int arr[]){
         int value[] = new int[3];
         for(int i=0;i<arr.length-2;i++){
