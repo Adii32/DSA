@@ -2,6 +2,9 @@ package TwoPointer;
 
 
 public class MergeTwoSortedArray {
+//     You are given two sorted integer arrays arr1 and arr2 in ascending order.
+
+// Merge both arrays into a single sorted array and return it.
     public static int[] find(int arr1[],int arr2[]) {
         int temp[] = new int[arr1.length+arr2.length];
         int index=0;
