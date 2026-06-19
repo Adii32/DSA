@@ -1,6 +1,11 @@
 package SlidingWindow;
 
 public class FindMaximumSumInKLength {
+//    Find the Maximum Sum of a Subarray of Size K
+//
+//    Given an integer array arr and a positive integer k,
+//    find the maximum sum among all
+//    contiguous subarrays of size k.
     public static int find(int arr[],int k){
         int sum=0;
         int low=0;
