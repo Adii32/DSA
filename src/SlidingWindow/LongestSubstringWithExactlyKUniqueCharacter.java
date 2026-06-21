@@ -1,8 +1,16 @@
 package SlidingWindow;
 
+import javax.xml.stream.events.Characters;
 import java.util.HashMap;
 
 public class LongestSubstringWithExactlyKUniqueCharacter {
+//    Question: Longest Substring with Exactly K Unique Characters
+//
+//    Given a string s and an integer k,
+//    find the length of the longest substring that
+//    contains exactly k distinct (unique) characters.
+//
+//    If no such substring exists, return -1.
     public static int find(String str,int k){
       int low=0;
       int res=-1;
@@ -20,7 +28,7 @@ low++;
         return res;
     }
     public static void main(String[] args){
-        String str = "aaabcaaa";
+        String str = "aaabbcc";
         int found = find(str,2);
         System.out.println(found);
 

@@ -1,6 +1,11 @@
 package SlidingWindow;
 
-public class FindMaximumLengthWhichSumGreaterThanEqualToTarget {
+public class FindMinimumLengthWhichSumGreaterThanEqualToTarget {
+//    Question: Minimum Size Subarray Sum
+//
+//    Given an array of positive integers arr[] and an integer target, find the minimum length of a contiguous subarray whose sum is greater than or equal to target.
+//
+//    If no such subarray exists, return 0.
     public static int find(int arr[],int target){
         int low=0;
         int high=0;

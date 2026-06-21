@@ -1,6 +1,11 @@
 package SlidingWindow;
 
 public class MinimumWindowSubstring {
+//    Question: Minimum Window Substring
+//
+//    Given two strings s and t, find the smallest substring of s that contains all the characters of t, including their frequencies.
+//
+//    If no such substring exists, return an empty string "".
     public static boolean fun(int have[],int need[]){
         for(int i=0;i<255;i++){
             if(have[i]<need[i]) return false;
@@ -14,7 +19,7 @@ public class MinimumWindowSubstring {
         int need[] = new int[255];
         int start=0;
         int min = Integer.MAX_VALUE;
-        for(int i=0;i<str2.length();i++){
+        for(int i=0;i< str2.length();i++){
             need[str2.charAt(i)]++;
         }
         int low=0;
@@ -33,7 +38,7 @@ public class MinimumWindowSubstring {
         return min==Integer.MAX_VALUE ? "" : str1.substring(start,start+min);
   }
     public static void main(String [] args){
-        String str1 = "abcdajgkabc";
+        String str1 = "adjcjgkakbc";
         String str2 ="abc";
         String st = find(str1,str2);
         System.out.println(st);

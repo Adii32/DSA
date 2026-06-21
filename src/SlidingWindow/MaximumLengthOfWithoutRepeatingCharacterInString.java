@@ -1,8 +1,16 @@
 package SlidingWindow;
 
+import javax.xml.stream.events.Characters;
 import java.util.HashMap;
 
 public class MaximumLengthOfWithoutRepeatingCharacterInString {
+//    Question: Longest Substring Without Repeating Characters
+//
+//    Given a string s, find the length of the longest substring that contains no repeating characters.
+//
+//    A substring is a contiguous sequence of characters within the string.
+//
+//    Return the maximum possible length.
   public static int find(String str){
     int low=0;
     int res=-1;
@@ -25,7 +33,7 @@ res = Math.max(res,k);
     return res;
   }
 public static void main(String[] args){
-String str = "aaabcaaa";
+String str = "sssstraa";
 int found = find(str);
 System.out.println(found);
 
