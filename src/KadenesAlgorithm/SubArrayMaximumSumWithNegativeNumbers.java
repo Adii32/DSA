@@ -1,6 +1,7 @@
 package KadenesAlgorithm;
 
 public class SubArrayMaximumSumWithNegativeNumbers {
+    //find maximum sum including nagetive number 
     public static int find(int arr[]){
         int bestEnding = arr[0];
         int ans = arr[0];
