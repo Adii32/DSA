@@ -1,6 +1,7 @@
 package KadenesAlgorithm;
 
 public class SubArrayWithMaxProduct {
+    //find the maximum product in sub array 
     public static int find(int arr[]){
         int maxEnding = arr[0];
         int minEnding = arr[0];
