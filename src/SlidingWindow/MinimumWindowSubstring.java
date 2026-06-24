@@ -3,7 +3,9 @@ package SlidingWindow;
 public class MinimumWindowSubstring {
 //    Question: Minimum Window Substring
 //
-//    Given two strings s and t, find the smallest substring of s that contains all the characters of t, including their frequencies.
+//    Given two strings s and t, find the smallest
+//    substring of s that contains all the characters of t,
+//    including their frequencies.
 //
 //    If no such substring exists, return an empty string "".
     public static boolean fun(int have[],int need[]){
