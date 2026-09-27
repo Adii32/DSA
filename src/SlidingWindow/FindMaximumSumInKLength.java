@@ -7,24 +7,36 @@ public class FindMaximumSumInKLength {
 //    find the maximum sum among all
 //    contiguous subarrays of size k.
     public static int find(int arr[],int k){
+//        int sum=0;
+//        int low=0;
+//        int high=k-1;
+//        for(int i=low;i<=high;i++){
+//            sum+=arr[i];
+//        }
+//        int maxSum = Integer.MIN_VALUE;
+//     while(high<arr.length){
+//         maxSum = Math.max(maxSum,sum);
+//         high++;
+//         low++;
+//         if(high==arr.length){
+//             break;
+//         }
+//         sum = sum-arr[low-1];
+//         sum = sum+arr[high];
+//     }
+//     return maxSum;
         int sum=0;
-        int low=0;
-        int high=k-1;
-        for(int i=low;i<=high;i++){
-            sum+=arr[i];
+        for(int i=0;i<k;i++){
+          sum+=arr[i];
         }
-        int maxSum = Integer.MIN_VALUE;
-     while(high<arr.length){
-         maxSum = Math.max(maxSum,sum);
-         high++;
-         low++;
-         if(high==arr.length){
-             break;
-         }
-         sum = sum-arr[low-1];
-         sum = sum+arr[high];
-     }
-     return maxSum;
+        int max = Integer.MIN_VALUE;
+        max = Math.max(max,sum);
+        for(int i=k;i<arr.length;i++){
+            sum+=arr[i];
+            sum-=arr[i-k];
+            max = Math.max(max,sum);
+        }
+        return max;
     }
     public static void main(String [] args){
         int arr[] = {1,2,3,4,5,6,7,8,9};
